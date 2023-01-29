@@ -10,6 +10,8 @@ const routes = [
 
 export default function Generators() {
   return (
-    <RouteContainer>{/* <SubRouteList routes={routes} /> */}</RouteContainer>
+    <RouteContainer>
+      <SubRouteList routes={routes} />
+    </RouteContainer>
   );
 }

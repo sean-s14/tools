@@ -14,6 +14,7 @@ import {
 
   // Generators
   Generators,
+  PasswordGenerator,
 
   // Other
   Other,
@@ -60,6 +61,7 @@ function App() {
 
           {/* Generators */}
           <Route path="/generators" element={<Generators />} />
+          <Route path="/generators/password" element={<PasswordGenerator />} />
 
           {/* Other */}
           <Route path="/other" element={<Other />} />

@@ -7,6 +7,7 @@ import TemperatureConverter from "./tools/conversion/temperature";
 
 // Generators
 import Generators from "./tools/generators/generators";
+import PasswordGenerator from "./tools/generators/password";
 
 // Other
 import Other from "./tools/other/other";
@@ -22,6 +23,7 @@ export {
 
   // Generators
   Generators,
+  PasswordGenerator,
 
   // Other
   Other,

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import * as React from "react";
 import {
   Box,
   List,
@@ -148,8 +149,8 @@ export default function Navigator() {
             <Divider />
             <List>
               {mainRoutes?.map(({ title, path, Icon }, index) => (
-                <>
-                  <ListItem key={index} disablePadding>
+                <React.Fragment key={index}>
+                  <ListItem disablePadding>
                     <ListItemButton
                       onClick={() => navigate(path)}
                       sx={{
@@ -205,7 +206,7 @@ export default function Navigator() {
                     </ListItemButton>
                   </ListItem>
                   <Divider />
-                </>
+                </React.Fragment>
               ))}
             </List>
           </Box>
